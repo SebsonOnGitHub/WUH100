@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+/* General */
+body {
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -2px;
+  font-family: 'Rubik', 'Arial', sans-serif;
+  font-size: 12px;
+}
+
+h2, h3, p {
+  margin: 20px 30px;
+}
+
+ul {
+  padding-left: 0;
+}
+
+/* Header */
+
+header {
+  display: flex;
+}
+
+h1 {
+  font-size: 2em;
+  flex: 2;
+  padding-left: 1em;
+}
+
+nav {
+  display: none;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+/* Short info */
+
+#short_info ul {
+  list-style-type: none;
+  display: flex;
+  margin-top: 20px;
+}
+
+#short_info ul li{
+  font-family: URW Chancery L, cursive;
+  font-size: 2em;
+  padding-bottom: 70px;
+  flex: 1;
+  text-align: center;
+}
+
+
+/* Main info */
+
+.wrapper {
+  display: flex;
+}
+
+.pic_box {
+  flex: 1;
+  border: 2px solid black;
+  margin-top: 2em;
+  padding-top: 1em;
+  margin-bottom: 0;
+}
+
+.pic_box img {
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 10px solid white;
+  display: block;
+  margin-top: -100px;
+}
+
+.pic_box h3, .pic_box p {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#left_box {
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+#mid_box {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#right_box {
+  margin-left: 5px;
+  margin-right: 0;
+}
+
+#left_box img {
+  margin-right: auto;
+}
+
+#mid_box img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#right_box img {
+  margin-left: auto;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+}
+
+.footer_box {
+  flex: 1;
+  color: black;
+  text-align: center;
+}
+
+.footer_box p, .footer_box h3 {
+  margin: 15px 30px;
+}
+
+/* Processanalys */
+
+#processanalys_text {
+  padding: 0;
+}
