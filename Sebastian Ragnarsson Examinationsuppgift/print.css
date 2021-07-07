@@ -76,8 +76,6 @@ a {
   height: 100px;
   border-radius: 50%;
   border: 10px solid white;
-  display: block;
-  margin-top: -100px;
 }
 
 .pic_box h3, .pic_box p {
