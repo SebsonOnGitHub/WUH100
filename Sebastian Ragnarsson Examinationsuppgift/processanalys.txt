@@ -1,0 +1,36 @@
+Planering
+
+Första steget i min process var att läsa igenom instruktionerna noga samt titta på dem mock-ups vi hade fått bifogade. Jag insåg att jag skulle nöja mig med att gå för dem två obligatoriska sidorna samt den simplare versionen av mobilsidan. Det är viktigt att först etablera ett projekts scope så att man har ett mål att sikta mot. Utan ett tydligt mål och en tydlig plan är det svårt att producera en bra produkt. Det är därför man bör jobba med olika mock-ups under utvecklingen enligt Benson, E. (2013). På så sätt har man ett mål att sikta mot samt om flera individer arbetar på samma projekt har alla samma vision. Eftersom jag redan hade mina mockups redo gick jag in i HTML och började markera upp sidan.
+
+HTML
+
+Först och främst är det viktigt att ha en stabil, välkodad och clean kod att jobba med. Med detta i åtanke började jag skriva på mina två HTML sidor. I föreläsningarna blev vi rekommendera att göra den mest förekommande sidan först och sedan göra evenutella utstickande sidor så som förstasidan men eftersom jag enbart planerade att göra två sidor valde jag att göra startsidan först. Jag skapade en header som skulle innehålla logotypen samt navigationsmenyn. Eftersom menyn såg lite tom ut valde jag att även lägga till min linked-in samt båda valideringslänkarna för HTML så väl som CSS. Sedan valde jag att gå med citat under kategorin "Kort text / punkter om dig själv" då det kändes som att de skulle passa bra in med den övrigt textfyllda sidan. Valet att använda en UL kom från att jag tänkte mig att det skulle passa en punktlista av citat. Detta typ av upplägg går att lösa på många sätt, som mycket i webbprogrammering, och det handlar snarare bara om att välja ett arbetssätt och komma igång, det blir lite av en "alla vägar bär till rom" situation. För att visa ett annat sätt ett liknande upplägg kan hanteras valde jag att göra footern i en annorlunda stil.
+
+Sedan fick huvudinnehållet på sidan vara sin egen wrapper med tre, i grunden, likadana rutor. Genom att ge dem alla samma klass men även ge dem unika ID visste jag att jag senare på ett smidigt sätt kunde ge dem generella egenskaper så som form, paddings, färg, textstorlek, etc. men att jag även kunde gå in och kontrollera det som skiljer dem åt som placering av bilderna. I processanalysen kunde jag sedan enkelt byta ut innehåller i wrappern till att vara texten som du läser just nu!
+
+Slutligen valde jag att markera upp footern lite som ett alternativt sätt till hur jag markerade upp citaten. Denna gången använde jag mig av divs. Precis som med rutorna i wrappern fick varje ruta en klass så jag kunde applicera generiska egenskaper och de fick även ett unikt ID för att kunna hantera mer speficka problem.
+
+CSS
+
+Nästa steg i processen var att studera varje mock-up och lägga upp en plan för hur jag skulle kunna återskapa dem i CSS. Jag bestämde mig för att dela upp sidan i flexboxes för att det var simpelt och effektivt givet designen på mock-upen. Som bakgrund valde jag att använda mig av en statisk bild som sidan liksom "scrollar förbi". Detta togs upp på föreläsningen om bakgrunder och jag tyckte att det skulle passa bra till min hemsida. Som bakgrund använde jag en livlig bild med mycket sol, glädje och sommarkänslor. 
+
+Header fick bli en flexbox med ratio 2:3 för att försöka matcha mock-upen så mycket som möjligt. Eftersom jag hade små korta länkar valde jag att använda mig av en ul samt inline block för att skapa en navigations menu. Jag passade även på att göra länkarna lite mer integrerade i sidan genom att ta bort underline tills hovered samt ändra färgerna. På liknande sätt till ovan använde jag mig av en flexbox för att dela upp citaten och fylla ut sidan horizontellt. En cursiv fontstack kändes passande till citat samt applicerade jag en textskuggning för att få texten att sticka ut mer från bakgrunden.
+
+Mobilversion
+
+Enligt Cui, Y., & Roto, V. (2008) är det främsta användningsområdet för mobila hemsidor informationsinsamling. Användare bryr sig alltså mer om att informationen finns tillgänglig än att den presenteras på ett speciellt sätt. Sedan kan en bra presentation underlägga informationsupptagning men det är inte det viktigaste. Bara för att en enhets bredd är 980px eller mindre betyder inte det att det är mindre viktigt att informationen på sidan kommer fram. Hade vi använt samma design som för större enheter hade saker blivit ihoptryckta, potentiellt förvrängda och allmänt svårlästa. Genom att följa den simplare mock-upen för mobilenheter kunde jag undvika dessa problem. Först genom att sätta logotypen ovan menyn utnyttjar vi enhetens längd istället för dess bredd. Samma resonemang följer genom att ta bort rutorna till vänster och höger vilket tillåter mittenrutans innehåll att synas tydligare. Optimalt hade vi velat behålla informationen i sidrutorna genom att lägga dem ovan eller under men då jag valde den simplare mock-upen så blev det inte så. Ett annat sätt att göra sidan mer mobilanpassad är att ändra marginaler och paddings för att maximera utrymmet så mycket som möjligt åt sidorna. Även en mindre fontstorlek kan maximera information på skärmen men det är viktigt att inte använda för liten fontstorlek, det ska ju fortfarande vara läsligt!
+
+Printversion
+
+Denna version av dokumentet ska bevara så mycket av informationen som möjligt på ett så simpelt format som möjligt för att underlätta utskrift samtidigt som den inte avgår för mycket från sidans orginaldesign. Användaren ska fortfarande kunna känna igen vilken information som kommer från var på sidan. Genom att ta bort onödiga element och maximera informationen på den utskrivna sidan sparar vi även på mängden papper som används och därför jobbar mot för en bättre miljö som understrykt av Lloyd, I. (2007) i sin föreläsning om ämnet. Bakgrunden och menyn kan tas bort då bakgrunden kräver onödigt mycket vid utskrift samt att menyn inte har ett syfte väl utskriven. Om man hade velat hade man kunnat ha kvar menyn fast med sina urls utskrivna men jag tog bort den helt. Även om man hade inkluderat bakgrunden i utskriften hade det inte inneburit att effekten ens varit densamma då den inte längre hade varit en statisk bild med scrolleffekten som nämnt tidigare.
+
+För att matcha mot den nya vita bakgrunden som papperet ger valde jag att ta bort textskuggningen, ändra footertexten till svart för att äka läslighet samt skapa en liten border runt rutorna i mitten så att man forfarande känner igen sidan.
+
+Referenser
+
+Benson, E. (2013, May). Mockup driven web development. In Proceedings of the 22nd International Conference on World Wide Web (pp. 337-342).
+
+Cui, Y., & Roto, V. (2008, April). How people use the web on mobile devices. In Proceedings of the 17th international conference on World Wide Web (pp. 905-914).
+
+Lloyd, I. (2007). Print Magic: Using the DOM and CSS to Save the Planet. In Web Standards Creativity (pp. 182-206). Apress.
+

@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
-/* General */
+/*----- General -----*/
+
+/* Removes the background image */
 body {
-  background-image: url("images/background.jpg");
+  background-image: none;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 -2px;
@@ -18,18 +20,14 @@ ul {
   padding-left: 0;
 }
 
-/* Header */
-
-header {
-  display: flex;
-}
+/*----- Header -----*/
 
 h1 {
   font-size: 2em;
-  flex: 2;
   padding-left: 1em;
 }
 
+/* Removes the navmenu */
 nav {
   display: none;
 }
@@ -39,8 +37,9 @@ a {
   text-decoration: none;
 }
 
-/* Short info */
+/*----- Short info -----*/
 
+/* Removes bullet points, italicises and makes the quotes feel more like quotes. */
 #short_info ul {
   list-style-type: none;
   display: flex;
@@ -53,29 +52,37 @@ a {
   padding-bottom: 70px;
   flex: 1;
   text-align: center;
+  text-shadow: none; /* In printing shadowing did not look as good */
 }
 
 
-/* Main info */
+/*----- Main info -----*/
 
 .wrapper {
   display: flex;
 }
 
+/* Adds a border to each textbox to have them be distinct against white paper */
 .pic_box {
   flex: 1;
   border: 2px solid black;
   margin-top: 2em;
   padding-top: 1em;
   margin-bottom: 0;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
+/* Changes the images into circles and moves them above the pic_boxes */
 .pic_box img {
   object-fit: cover;
   width: 100px;
   height: 100px;
   border-radius: 50%;
   border: 10px solid white;
+  display: block;
+  box-sizing: border-box;
+  margin-top: -60px;
 }
 
 .pic_box h3, .pic_box p {
@@ -83,21 +90,7 @@ a {
   margin-right: 5px;
 }
 
-#left_box {
-  margin-left: 0;
-  margin-right: 5px;
-}
-
-#mid_box {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-#right_box {
-  margin-left: 5px;
-  margin-right: 0;
-}
-
+/* Aligns the images to match the template given */
 #left_box img {
   margin-right: auto;
 }
@@ -111,7 +104,7 @@ a {
   margin-left: auto;
 }
 
-/* Footer */
+/*----- Footer -----*/
 
 footer {
   display: flex;
@@ -120,6 +113,7 @@ footer {
 .footer_box {
   flex: 1;
   color: black;
+  text-shadow: none; /* In printing shadowing did not look as good */
   text-align: center;
 }
 
@@ -127,7 +121,7 @@ footer {
   margin: 15px 30px;
 }
 
-/* Processanalys */
+/*----- Processanalys -----*/
 
 #processanalys_text {
   padding: 0;
